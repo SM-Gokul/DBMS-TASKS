@@ -39,3 +39,8 @@ SELECT
     Payment.status
 FROM Payment
 ORDER BY Payment.payment_date;
+SELECT
+    payment_mode,
+    COUNT(*) AS total_transactions
+FROM Payment
+GROUP BY payment_mode;
